@@ -48,10 +48,10 @@ if __name__ == "__main__":
             if P<=threshold and val>1: 
                 plt.plot([x*0.1], [y*0.1],'bo', markersize=2)
                 correct+=1
-            elif P<=threshold and val<=1: 
-                plt.plot([x*0.1], [y*0.1],'yo', markersize=2)
+            elif P>threshold and val<=1: 
+                plt.plot([x*0.1], [y*0.1],'go', markersize=2)
                 correct+=1
-            elif P>threshold and val<=1: plt.plot([x*0.1], [y*0.1],'go', markersize=2)
+            elif P<=threshold and val<=1: plt.plot([x*0.1], [y*0.1],'yo', markersize=2)
             elif P>threshold and val>1: plt.plot([x*0.1], [y*0.1], 'co', markersize=2)
     print(correct)
     plt.show()

@@ -38,7 +38,7 @@ if __name__ == "__main__":
     for x in np.arange(-20, 20):
         for y in np.arange(-20, 20):
             P= circle_perceptron(x*0.1,y*0.1)
-            val=circleeqn(x*0.1,y*0.1)
+            val = circleeqn(x*0.1,y*0.1) #expected output
             if P<=threshold and val>1: 
                 plt.plot([x*0.1], [y*0.1],'bo', markersize=2)
                 correct+=1

@@ -20,12 +20,6 @@ def dot(w,x):
     for i in range(len(w)):
         sum+= w[i]*x[i]
     return sum
-
-def binarycon(n, lfinal):
-    n1 = str(bin(n))
-    n1=n1[2:]
-    if lfinal> len(n1): n1 = '0'*int(lfinal-len(n1))+n1
-    return n1
    
 def circle_perceptron(x,y):
     A= perceptron(sigmoid, (0,1), 1, (x,y))

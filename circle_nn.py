@@ -57,7 +57,7 @@ def back_prop_matrix(training_set):
             if i%10==0: print(i, err, b, W)
             error= err
             lmda = err/10000
-    #print(y, a[2], '0.5', 0.5* np.linalg.norm(y-a[2])**2)
+    #print( 0.5* np.linalg.norm(y-a[2])**2) # error
     return a, b, W
 
 def circleeqn(x,y):
